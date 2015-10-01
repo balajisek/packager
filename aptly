@@ -1,0 +1,10 @@
+private package 
+
+1.$ssh root@103.56.92.76
+2.apt-get install aptly
+3.aptly repo create comment="simple" component="main" distribution="" testing2
+4.aptly repo create comment="simple" component="main" distribution="" developing
+5.aptly repo add testing2 megamcib_0.9_amd64.deb
+6.aptly repo add developing megamcibn_0.9_amd64.deb
+7.aptly publish repo testing2
+8.aptly publish repo developing
